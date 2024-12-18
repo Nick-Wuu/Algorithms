@@ -5,7 +5,7 @@ public class EngineStart {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();//发动机总个数
         int e = sc.nextInt();//手动启动的发动机个数
-        int[] launches = new int[n];//记录每个发动机最终启动时刻
+        int[] launches = new int[n];//记录每个发动机最终启动时刻K·
         Queue<int[]> queue = new LinkedList<>();
         Arrays.fill(launches, 1001);//初始化为极大值
         for (int i = 0; i < e; i++){
