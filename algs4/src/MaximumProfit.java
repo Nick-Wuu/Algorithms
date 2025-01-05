@@ -21,7 +21,7 @@ public class MaximumProfit {
         }
         int maxProfit = 0;
         for (int i = 0; i < number; i++) {
-            for (int j = 0; j < days; j++) {
+            for (int j = 1; j < days; j++) {
                 int profit = Math.max(0, products[i][j] - products[i][j - 1]);
                 maxProfit += profit * maxItems[i];
             }
